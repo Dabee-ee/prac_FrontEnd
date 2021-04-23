@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2004329f9f.js"
+            crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+<!--------------- header ------------------>
+<header class="header" th:fragment="bodyHeader">
+    <div class="main">
+        <nav>
+
+    <a href="#" class="logo"><i class="fas fa-cat"></i> DABABY </a>
+
+    <ul class="menu">
+        <li><a href="index.html" >HOME</a></li>
+        <li><a href="board.html" >BOARD</a></li>
+        <li><a href="store.html" >STORE</a></li>
+        <li><a href="#expert" >TESTIMONIAL</a></li>
+        <li><a href="#testimonials" >About</a></li>
+        <li><a href="#contact" >Contact</a></li>
+    </ul>
+
+    <!--------------- userMenu ------------------>
+    <!--------------- cart ------------------>
+    <ul class="icons">
+        <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+
+        <!--------------- userMenu ------------------>
+        <li class="action">
+
+            <!-- profile img -->
+            <div class="profile">
+<!--                <img src="image/2.jpg">-->
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </li>
+
+        <!-- profile menu-->
+        <div class="user_menu">
+            <h3>Someone Famous<br><span>Website</span></br></h3>
+            <ul>
+                <li><i class="far fa-user-circle"></i><a href="">내 프로필</a></li>
+                <li><i class="far fa-edit"></i><a href="">회원정보 수정</a></li>
+                <li><i class="far fa-envelope"></i><a href="">쪽지함</a></li>
+                <li><i class="fas fa-cog"></i><a href="">환경설정</a></li>
+                <li><i class="far fa-question-circle"></i><a href="">도움말</a></li>
+                <li><i class="fas fa-sign-out-alt"></i><a href="">로그아웃</a></li>
+            </ul>
+        </div>
+        <li><a href="#" class="tooggleBtn"><i class="fas fa-bars"></i></a></li>
+    </ul>
+    </nav>
+    </div>
+</header>
+
+<!-- login -->
+
+
+
+
+
+</body>
+</html>

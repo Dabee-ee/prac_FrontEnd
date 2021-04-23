@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <div class="itemBox">
+            <a href="#"><img src="image/1.jpg"></a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="itemBox">
+                <a href="#"><img src="image/2.jpg"></a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="itemBox">
+                <a href="#"><img src="image/3.jpg"></a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="itemBox">
+                <a href="#"><img src="image/4.jpg"></a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="itemBox">
+                <a href="#"><img src="image/5.jpg"></a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="itemBox">
+                <a href="#"><img src="image/6.jpg"></a>
+            </div>
+        </div>
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+</section>
+
+</script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        loop : true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+</body>
+</html>

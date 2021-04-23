@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2004329f9f.js" 
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="image/Starbucks_logo.png"></a>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee <br> It's <span>Starbucks</span></h2>
+                <p>To see the effect of sticky positioning, select the position: sticky option and scroll this container.
+                    The element will scroll along with its container, until it is at the top of the container (or reaches the offset specified in top), and will then stop scrolling, so it stays visible.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+                <div class="imgBox">
+                    <img src="image/Starbucks_bev_1.png" class="starbucks" >
+                </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="image/thumb1.png" onclick="imgSlider('image/Starbucks_bev_1.png'); changeCircleColor('#017143')"></li>
+            <li><img src="image/thumb2.png" onclick="imgSlider('image/Starbucks_bev_2.png'); changeCircleColor('#eb7495')"></li>
+            <li><img src="image/thumb3.png" onclick="imgSlider('image/Starbucks_bev_3.png'); changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="icons">
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+        </ul>
+    </section>   
+
+    <script type="text/javascript">
+
+        function imgSlider(anything) {
+        document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+        function transMenu() {
+
+            const menu = document.querySelector('.starbucks');
+            const thumb = document.querySelector('.thumb');
+
+            thumb.addEventListener('click', () => {
+            menu.classList('active');
+        });
+            
+        }
+
+
+    </script>
+</body>
+</html>

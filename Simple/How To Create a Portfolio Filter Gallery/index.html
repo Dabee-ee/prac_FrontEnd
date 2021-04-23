@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2004329f9f.js"
+            crossorigin="anonymous">
+    </script>
+    <script src="main.js"></script>
+</head>
+<body>
+<section>
+
+    <!-- filter -->
+    <ul>
+        <li class="list active" data-filter="All">All</li>
+        <li class="list" data-filter="Mountain">Mountain</li>
+        <li class="list" data-filter="Someone">Someone</li>
+    </ul>
+
+    <!-- product image -->
+    <div class="product">
+        <div class="itemBox Mountain"><img src="image/mountain/mountain_1.jpg"></div>
+        <div class="itemBox Mountain"><img src="image/mountain/mountain_2.jpg"></div>
+        <div class="itemBox Mountain"><img src="image/mountain/mountain_3.jpg"></div>
+        <div class="itemBox Mountain"><img src="image/mountain/mountain_4.jpg"></div>
+        <div class="itemBox Mountain"><img src="image/mountain/mountain_5.jpg"></div>
+        <div class="itemBox Mountain"><img src="image/mountain/mountain_6.jpg"></div>
+        <div class="itemBox Someone"><img src="image/Someone/M1.jpg"></div>
+        <div class="itemBox Someone"><img src="image/Someone/M2.jpg"></div>
+        <div class="itemBox Someone"><img src="image/Someone/M3.jpg"></div>
+        <div class="itemBox Someone"><img src="image/Someone/M4.jpg"></div>
+        <div class="itemBox Someone"><img src="image/Someone/M5.jpg"></div>
+        <div class="itemBox Someone"><img src="image/Someone/M6.jpg"></div>
+    </div>
+</section>
+
+<script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.list').click(function(){
+            const value = $(this).attr('data-filter');
+            if (value == 'All'){
+            $('.itemBox').show('1000');
+        } else {
+            $('.itemBox').not('.'+value).hide('1000');
+            $('.itemBox').filter('.'+value).show('1000');
+        }
+    })
+
+        // add active class on selected item
+
+        $('.list').click(function (){
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+    })
+</script>
+
+</body>
+</html>

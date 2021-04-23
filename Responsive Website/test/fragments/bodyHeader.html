@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<header class="header" th:fragment="bodyHeader">
+    <a href="#" class="logo">Food <span>.</span></a>
+
+    <ul class="menu">
+        <li><a href="#banner" >Home</a></li>
+        <li><a href="#about" >About</a></li>
+        <li><a href="#menu" >Menu</a></li>
+        <li><a href="#expert" >Expert</a></li>
+        <li><a href="#testimonials" >Testimonials</a></li>
+        <li><a href="#contact" >Contact</a></li>
+    </ul>
+
+    <!--------------- userMenu ------------------>
+    <!--------------- cart ------------------>
+    <ul class="icons">
+        <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+
+        <!--------------- userMenu ------------------>
+        <li class="action">
+
+            <!-- profile img -->
+            <div class="profile">
+                <img src="image/M1.jpg">
+            </div>
+        </li>
+
+        <!-- profile menu-->
+        <div class="user_menu">
+            <h3>Someone Famous<br><span>Website</span></br></h3>
+            <ul>
+                <li><i class="far fa-user-circle"></i><a href="">내 프로필</a></li>
+                <li><i class="far fa-edit"></i><a href="">회원정보 수정</a></li>
+                <li><i class="far fa-envelope"></i><a href="">쪽지함</a></li>
+                <li><i class="fas fa-cog"></i><a href="">환경설정</a></li>
+                <li><i class="far fa-question-circle"></i><a href="">도움말</a></li>
+                <li><i class="fas fa-sign-out-alt"></i><a href="">로그아웃</a></li>
+            </ul>
+        </div>
+        <li><a href="#" class="tooggleBtn"><i class="fas fa-bars"></i></a></li>
+    </ul>
+</header>

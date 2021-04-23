@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    color: #222;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav i {
+    font-size: 22px;
+    margin-left: 8px;
+}
+
+nav li {
+    float: left;
+    margin: 8px 12px;
+    list-style: none;
+}
+
+.menu li a:hover{
+    color: #017143;
+}
+
+.user_menu {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.row-2 {
+    margin: 10px 7%;
+}
+
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    max-height: 100vh;
+    padding: 50px 0;
+    display: block;
+    margin: 0 auto;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.col-2 p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: var(--accent-color);
+}
+
+
+/* product */
+.categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4:hover {
+    transform: translateY(-5px);
+}
+
+.col-4 img {
+    width: 100%;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0 auto 50px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+
+.col-4 p {
+    font-size: 14px;
+}
+
+.fas, .far{
+    color: var(--accent-color);
+}
+
+/* ----------------- offer --------------- */
+
+.offer {
+    background-image: url("image/GucciKai.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-5 {
+    color: #fff;
+}
+
+.col-5 h1 {
+    color: #BD9302;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.col-5 p {
+    color: #fff;
+    opacity: 0.7;
+}
+
+small {
+    color: #fff;
+}

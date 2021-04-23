@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2196f3;
+}
+
+.btn {
+    position: relative;
+    padding: 15px 20px;
+    background: #fff;
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    color: #2196f3;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    letter-spacing: 5px;
+}
+
+#popup {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #fff;
+    width: 450px;
+    padding: 80px 50px 50px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    visibility: hidden;
+}
+#popup .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#popup .content img {
+    max-width: 80px;
+    -webkit-filter: opacity(0.7) drop-shadow(0 0 0 #03a9f4);
+    margin: 10px 10px;
+}
+
+#popup .content h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+#popup .content .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup .content .inputBox input, textarea{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 15px;
+    outline: none;
+    font-size: 18px;
+}
+
+#popup .content .inputBox textarea{
+    resize: none;
+}
+
+#popup .content .inputBox input[type="submit"]{
+    max-width: 150px;
+    background: #03a9f4;
+    color: #fff;
+    border: none;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#popup.active {
+    visibility: visible;
+    top:50%
+}
+
+#popup .content p {
+    color: #777;
+    font-size: x-small;
+}
+
+.close img {
+    position:absolute;
+    transform: translate(20px, -100px);
+}
+

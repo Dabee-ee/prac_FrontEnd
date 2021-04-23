@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.sec {
+    height: 100vh;
+    display: block;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sec:after {
+    transform: translateY(1200px);
+    content: '';
+    width: 100%;
+    height: 200px;
+    display: block;
+    color:white;
+
+}
+
+.sec header {
+    color: white;
+    max-width: 80%;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 200;
+}
+
+.sec h1{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 200;
+}
+.sec h1:after {
+    content: '';
+    border-bottom: 1px solid white;
+    display: block;
+    width: 8rem;
+    margin: 0.7rem auto;    
+}
+
+/* section별 배경 이미지 */
+.sec.one { 
+    background-image: url(https://picsum.photos/1200/800?image=575);
+}
+    
+.sec.two { 
+    background-image: url(https://picsum.photos/1200/800?image=1016);
+}
+
+.sec.three { 
+    background-image: url(https://picsum.photos/1200/800?image=869);
+}
+
+.sec.four { 
+    background-image: url(https://picsum.photos/1200/800?image=506);
+}
+.sec.five {
+     background-image: url(https://picsum.photos/1200/800?image=1037); 
+}
+.sec.six { 
+    background-image: url(https://picsum.photos/1200/800?image=901);
+}

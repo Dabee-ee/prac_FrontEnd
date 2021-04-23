@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Button -->
+    <a class="btn" onclick="popupToggle();">Send Message</a>
+
+    <!-- Form -->
+    <form class="contactMe" method="post">
+    <div id="popup">
+        <div class="content">
+            <img src="email.png" width="300px" >
+            <h2>Contact Me.</h2>
+            <p>안녕하세요. 저의 포트폴리오 홈페이지를 방문해주셔서 감사합니다.
+                저에게 하고 싶은 말이 있다면 이메일과 함께 메세지를 작성해주세요.
+                확인 후 바로 연락드리겠습니다.
+            </p>
+            <div class="inputBox">
+                <input type="email" name="email" placeholder="Enter Email">
+            </div>
+            <div class="inputBox">
+                <textarea name="message" placeholder="Enter message"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Send" class="btn">
+            </div>
+            <div>
+                <a class="close" onclick="popupToggle();"><img src="x.png" width="30px"></a>
+            </div>
+        </div>
+    </div>
+    </form>
+
+
+    <script>
+        function popupToggle() {
+            const popup = document.getElementById('popup');
+            popup.classList.toggle('active')
+        }
+    </script>
+
+</body>
+</html>

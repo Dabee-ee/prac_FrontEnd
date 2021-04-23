@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/2004329f9f.js"
+            crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+<!--------------- header ------------------>
+<header class="header" th:fragment="bodyHeader">
+    <div class="main">
+        <nav>
+
+    <a href="#" class="logo"><i class="fas fa-cat"></i> DABABY </a>
+
+    <ul class="menu">
+        <li><a href="index.html" >HOME</a></li>
+        <li><a href="board.html" >BOARD</a></li>
+        <li><a href="store.html" >STORE</a></li>
+        <li><a href="#expert" >TESTIMONIAL</a></li>
+        <li><a href="#testimonials" >About</a></li>
+        <li><a href="#contact" >Contact</a></li>
+    </ul>
+
+    <!--------------- userMenu ------------------>
+    <!--------------- cart ------------------>
+    <ul class="icons">
+        <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+
+        <!--------------- userMenu ------------------>
+        <li class="action">
+
+            <!-- profile img -->
+            <div class="profile">
+<!--                <img src="image/2.jpg">-->
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </li>
+
+        <!-- profile menu-->
+        <div class="user_menu">
+            <h3>Someone Famous<br><span>Website</span></br></h3>
+            <ul>
+                <li><i class="far fa-user-circle"></i><a href="">내 프로필</a></li>
+                <li><i class="far fa-edit"></i><a href="">회원정보 수정</a></li>
+                <li><i class="far fa-envelope"></i><a href="">쪽지함</a></li>
+                <li><i class="fas fa-cog"></i><a href="">환경설정</a></li>
+                <li><i class="far fa-question-circle"></i><a href="">도움말</a></li>
+                <li><i class="fas fa-sign-out-alt"></i><a href="">로그아웃</a></li>
+            </ul>
+        </div>
+        <li><a href="#" class="tooggleBtn"><i class="fas fa-bars"></i></a></li>
+    </ul>
+    </nav>
+    </div>
+</header>
+
+<!-- board section -->
+<!-- featured categories -->
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="image/3.jpg">
+            </div>
+            <div class="col-3">
+                <img src="image/3.jpg">
+            </div>
+            <div class="col-3">
+                <img src="image/3.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- featured product -->
+<div class="small-container">
+    <!-- 1 -->
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="image/4.jpg">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="image/4.jpg">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="image/4.jpg">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="image/4.jpg">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+
+        <!-- 2 -->
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="image/4.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+
+            <div class="col-4">
+                <img src="image/4.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+
+            <div class="col-4">
+                <img src="image/4.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+
+            <div class="col-4">
+                <img src="image/4.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="image/4.jpg">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="image/4.jpg">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="image/4.jpg">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="image/4.jpg">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- offer -->
+<div class="offer">
+    <div class="offer-container">
+        <div class="row-2">
+            <div class="col-5" ></div>
+
+            <div class="col-5">
+                <p>한국 최초 런칭 지금 바로 만나보세요</p>
+                <h1>KAI X GUCCI</h1>
+                <small>가수, 예술가이자 배우인 카이는 2011년에 엑소(EXO)의 멤버로 데뷔한 이래 케이팝의 주역으로 활동하고 있습니다.
+                    <br>카이가 특별하게 여기는 테디 베어에서 영감을 얻어 레디-투-웨어, 스니커즈, 가방 및 패션소품으로 구성된 스페셜 컬렉션을 선보입니다.</small>
+                <br><a href="" class="btn">Buy now</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

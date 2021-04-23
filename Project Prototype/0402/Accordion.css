@@ -1,0 +1,60 @@
+.accordion {
+    display: grid;
+    padding: 15% 15%;
+    width: 100%;
+}
+
+.accordion .contentBox{
+    position: relative;
+    margin: 10px 20px;
+}
+
+.accordion .contentBox .label {
+    position: relative;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    cursor : pointer;
+}
+
+.accordion .contentBox .label::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.accordion .contentBox.active .label::before{
+    content: '-';
+}
+
+.accordion .contentBox .content {
+    position: relative;
+    background : #fff;
+    opacity: 60%;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.accordion .contentBox.active .content {
+    height: 150px;
+    padding: 10px;
+}
+
+/* More btn */
+
+.faq_search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-60%);
+
+}
+
+#featured {
+
+}
