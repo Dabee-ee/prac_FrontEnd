@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2004329f9f.js"
+    crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <!-- 로고 -->
+            <div class="logo">
+                <i class="fas fa-apple-alt"></i>
+                <a href="#">함께 해피</a>
+            </div>
+            
+            <!-- 메뉴 -->
+            <ul>
+                <li><a href="">메인</a></li>
+                <li><a href="">레시피</a></li>
+                <li><a href="">간편집밥</a></li>
+                <li><a href="">지역명물</a></li>
+                <li><a href="">건강한밥</a></li>
+                <li><a href="">요리꿀팁</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="sec one" id="sec">
+    
+        <header>
+            <h1>딸, 밥 잘 챙겨먹고 있지?</h1>
+        </header>
+
+        <div class="scrolldown">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    
+
+    <div class="sec two" id="sec">
+        <header>
+            <h1>엄마의 인사는 왜 항상 '밥 먹었니'일까요?</h1>
+        </header>
+    </div>
+
+    <div class="sec three" id="sec">
+        <header>
+            <h1>너무 지쳐서 쓰러질 것 같았던 어느 날,</h1>
+            저를 위로해 준 건 매일 먹던 집밥이었어요. "힘내"라는 말보다 따듯한 밥 한 숱갈에 왈칵 눈물이 나더라고요.
+        </header>
+    </div>
+
+    <div class="sec four" id="sec">
+        <header>
+            <h1> 어머니가 자주 해주시던 반찬이</h1>
+            식당에 나올 때면 그 날 저녁은 오랜만에 집에서 밥을 차려 먹곤 해요.
+        </header>
+    </div>
+
+    <div class="sec five" id="sec">
+        <header>
+            <h1>한국인의 밥은 '정서', '가족', '추억'입니다.</h1>
+            바쁜 일상 때문에 밥해먹기 어려웠던 분께 초간단 레시피와 식재료 관리 노하우, 냉장고에 있는 재료로 만들 수 있는 레시피를 추천해 드립니다.
+        </header>
+    </div>
+
+    <div class="sec six" id="sec">
+        <header>
+            <h1>오늘 유독 가족이 보고 싶은 분께</h1>
+            함께 해피의 어머니들이 엄마의 레시피를.
+        </header>
+    </div>
+
+    <div class="sec seven" id="sec">
+        <header>
+            <h1>Lorem ipsum dolor sit amet</h1>
+        </header>
+    </div>
+
+    <div class="sec eight" id="sec">
+        <header>
+            <h1>소중한 사람들과 추억을 만들고 싶은 분께</h1>
+            함께 해피의 이색 레시피를.
+        </header>
+    </div>
+
+    <div class="sec nine" id="sec">
+        <header>
+            <h1>아이와 함께 먹을 건강한 음식을 찾는 분께</h1>
+            건강 레시피를.
+        </header>
+    </div>
+
+    <div class="sec ten" id="sec">
+        <header>
+            <h1>간편하게 레시피를 검색하고, 공유함으로써 함께 해피해져요.</h1>
+            레시피를 공유하여 다른 사람들에게 새로운 "추억"을 선물해주세요.
+            함께 해보는 레시피로 함께 해피해질 수 있습니다.
+        </header>
+    </div>
+
+
+    <!-- <script>
+        var headerBg = document.querySelector('.sec')
+        window.addEventListener('scroll', function (){
+            headerBg.style.opacity = 1 - +window.pageYOffset/550+''
+            // headerBg.style.scale = "scale(2)";
+            headerBg.style.webkitTransform = "scale(1.2)";
+        })
+    </script> -->
+
+<!-- 스크롤 이벤트 시 반복해서 객체 뽑기.. -->
+<!--
+<script type="text/javascript" >
+    let sec = document.querySelector('.sec');
+
+    window.addEventListener('scroll', function() {
+    let value = window.scrollY;
+
+    sec.style.top = value * 10 + 'px';
+
+    const sections = document.querySelectorAll('#sec');
+   
+    for (let i=0; i<sections.length; i++) {
+    console.log(sections[i]);
+    }
+});
+-->
+
+<!-- 응용해서 투명도를 바꿔보자 
+<script>
+
+    let sec = document.querySelector('.sec');
+
+    window.addEventListener('scroll', function() {
+    let value = window.scrollY;
+
+    sec.style.opacity = value + 0.1;
+    });
+</script>
+-->
+
+<script>
+    let icon = document.querySelector('.scrolldown');
+
+    window.addEventListener('scroll', function() {
+    let value = window.scrollY;
+
+    icon.style.opacity -= value + 0.2;
+
+    });
+</script>
+
+</body>
+</html>

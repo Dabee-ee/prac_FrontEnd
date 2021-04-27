@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --slide-1 : #a5b874; /*색 초록*/
+    --slide-2 : #bf814b; /* 붉은색*/
+    --slide-3 : #82b8d9; /*파랑색*/
+    --slide-4 : #fafafa; /*아주연한 회색배경*/
+    --gray-color : #b7b7b7; /*중간회색*/
+    --black-color : #262626; /*블랙*/
+    --white-color : #fff; /*white*/
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar { display: none; }
+
+/* slide */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+.slide img {
+    width: 100%;
+    height: 100vh;
+}
+#slide-1 {
+    top: 0;
+}
+#slide-2 {
+    background: url("image/2.jpg");
+    top: 100%;
+}
+#slide-3 {
+    background: url("image/3.jpg");
+    top: 200%;
+}
+#slide-4 {
+    background: url("image/4.jpg");
+    top: 300%;
+}
+
+#slide-radio-1:checked ~ .slide {transform: translateY(0);}
+#slide-radio-2:checked ~ .slide {transform: translateY(-100%);}
+#slide-radio-3:checked ~ .slide {transform: translateY(-200%);}
+#slide-radio-4:checked ~ .slide {transform: translateY(-300%);}

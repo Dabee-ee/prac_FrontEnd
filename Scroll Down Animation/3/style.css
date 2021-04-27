@@ -12,6 +12,7 @@ body {
     background-size: cover;
     background-position: center;
 }
+::-webkit-scrollbar { display: none; }
 
 .sec:after {
     transform: translateY(1200px);
@@ -48,39 +49,39 @@ body {
 }
 
 /* section별 배경 이미지 */
-.sec.one { 
+.sec.one {
     background-image: url(https://picsum.photos/1200/800?image=575);
     animation: fadeIn 5s;
 }
-    
-.sec.two { 
+
+.sec.two {
     background-image: url(https://picsum.photos/1200/800?image=1016);
 }
 
-.sec.three { 
+.sec.three {
     background-image: url(https://picsum.photos/1200/800?image=869);
 }
 
-.sec.four { 
+.sec.four {
     background-image: url(https://picsum.photos/1200/800?image=506);
 }
 .sec.five {
-     background-image: url(https://picsum.photos/1200/800?image=1037); 
+    background-image: url(https://picsum.photos/1200/800?image=1037);
 }
-.sec.six { 
+.sec.six {
     background-image: url(https://picsum.photos/1200/800?image=901);
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0; 
-    }
+/*@keyframes fadeIn {*/
+/*    0% {*/
+/*        opacity: 1;*/
+/*    }*/
 
-    50% {
-        opacity: 1;
-    }
+/*    50% {*/
+/*        opacity: 0.5;*/
+/*    }*/
 
-    100% {
-        opacity: 0;
-    }
-}
+/*    100% {*/
+/*        opacity: 0;*/
+/*    }*/
+/*}*/

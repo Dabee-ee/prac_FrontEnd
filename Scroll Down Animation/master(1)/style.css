@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+
+    text-decoration: none;
+    color: #fff;
+}
+/* 메뉴바 (큰 틀)*/
+nav {
+    position: fixed;
+
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 16px;
+}
+/* 로고 */
+.logo i {
+    margin: 12px 12px;
+}
+/* 메뉴 */
+nav ul li {
+    list-style: none;
+    float: left;
+    margin: 12px 12px;
+}
+
+/* 스크롤 안보이게 */
+::-webkit-scrollbar { display: none; }
+
+
+/* 스크롤다운 아이콘 */
+.scrolldown {
+    position : absolute;
+    bottom : 20px;
+    left: 50%;
+    width : 40px;
+    height : 40px;
+    transform: translateY(-80px) translateX(-50%)
+    rotate(45deg);
+}
+
+.scrolldown span {
+    position: absolute;
+    top : 0;
+    left : 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    animation: animate 1.5s linear infinite;
+    opacity : 0;
+}
+.scrolldown span:nth-child(1) {
+    transform: translate(-15px, -15px);
+    animation-delay: -0.4s;
+}
+
+.scrolldown span:nth-child(2) {
+    transform: translate(0px, 0px);
+    animation-delay: -0.2s;
+}
+
+.scrolldown span:nth-child(3) {
+    transform: translate(15px, 15px);
+    animation-delay: 0s;
+}
+
+@keyframes animate {
+    0%
+    {
+        top: -5px;
+        left: -5px;
+        opacity: 0; 
+    }
+    25%
+    {
+        top: 0px;
+        left: 0px;
+        opacity: 1; 
+    }
+    100%
+    {
+        top: 5px;
+        left: 5px;
+        opacity: 0; 
+    }
+
+}
+
+/* FULL SIZE IMAGE 영역*/
+.sec {
+    height: 100vh;
+    display: block;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sec header {
+    color: white;
+    max-width: 80%;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 200;
+}
+
+.sec h1{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 200;
+}
+.sec h1:after {
+    content: '';
+    border-bottom: 1px solid white;
+    display: block;
+    width: 8rem;
+    margin: 0.7rem auto;    
+}
+
+/* section별 배경 이미지 */
+.sec.one {
+    background-image: url(image/1.jpg);
+    animation: fadeIn 5s;
+}
+
+.sec.two {
+    background-image: url(image/2.jpg);
+}
+
+.sec.three {
+    background-image: url(image/3.jpg);
+}
+
+.sec.four {
+    background-image: url(image/4.jpg);
+}
+
+.sec.five {
+    background-image: url(image/5.jpg);
+}
+
+.sec.six {
+    background-image: url(image/6.jpg);
+}
+
+.sec.seven {
+    background-image: url(image/7.jpg);
+}
+
+.sec.eight {
+    background-image: url(image/8.jpg);
+}
+
+.sec.nine {
+    background-image: url(image/9.jpg);
+}
+
+.sec.ten {
+    background-image: url(image/10.jpg);
+}
+
+
+
+
