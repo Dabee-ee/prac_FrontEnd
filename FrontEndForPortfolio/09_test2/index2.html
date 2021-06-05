@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrinkto-fit=no">
+    <title>Hello, world!</title>
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <script defer src="main.js"></script>
+    <!-- FONT AWSOME -->
+    <script src="https://kit.fontawesome.com/2004329f9f.js"
+            crossorigin="anonymous"></script>
+<body>
+
+    <!-- Background Circles Start -->
+    <div class="bg-circles">
+        <div class="cicle-1"></div>
+        <div class="cicle-2"></div>
+        <div class="cicle-3"></div>
+        <div class="cicle-4"></div>
+        <div class="cicle-5"></div>
+
+        <div class="bg-img1">
+            <img src="/images/30-1.png" alt="">
+        </div>
+
+        <div class="bg-img2">
+            <img src="/images/20-1.png" alt="">
+        </div>
+
+    </div>
+    <!-- Background Circles End -->
+
+    
+
+
+
+
+    <!-- Header -->
+    <header>
+        <!-- logo -->
+        <div class="logo">
+            <a href="index.html" class="logo"></a>
+        </div>
+        <!-- //logo -->
+
+        <!-- menu-->
+        <div class="menu">
+            <ul>
+                <li class="nav"><a href="index.html">ABOUT</a><div class="small-ball"></div></li>
+                <li class="nav"><a href="index.html">SKILL</a></li>
+                <li class="nav"><a href="/portfolio/portfolio.html">PORTFOLIO</a></li>
+                <li class="nav"><a href="index.html">BLOG</a></li>
+                <li class="nav"><a href="index.html">CONTACT</a></li>
+                <li class="btn nav"><a href="index.html">NOTION</a></li>
+            </ul>
+        </div>
+        <!-- //menu -->
+    </header>
+    <!-- //Header -->
+
+<!-- Glassmorphism  -->
+<section class="glass"> 
+    <!-- background box -->
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+
+
+
+     <!-- main content-->
+     <div class="wrapper">
+        <!-- square -->
+        <div class="square" style="--i:0;"></div>
+        <div class="square" style="--i:1;"></div>
+        <div class="square" style="--i:2;"></div>
+        <div class="square" style="--i:3;"></div>
+        <div class="square" style="--i:4;"></div>
+
+
+        <!-- Main Content 시작 -->
+        <div class="home">
+            <div class="container">
+
+ 
+
+                <div class="person">
+                    <!-- <span class="person-overlay"></span> -->
+                    <img src="/images/38-1.png" alt="">
+                </div>
+
+                <div class="home-text">
+                    <h6 class="student">Student</h6>
+                    <h1 class="name">Dabee</h1>
+                </div>
+
+            </div>
+        </div>
+        <!-- Main Content 끝 -->
+    </div>
+</section>
+
+
+
+    
+
+   <!-- JS ( cdnjs.com )-->
+    <!-- JQUERY LINK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>   
+    <!-- LETTERING JS ( http://letteringjs.com/ )-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js" integrity="sha512-9ex1Kp3S7uKHVZmQ44o5qPV6PnP8/kYp8IpUHLDJ+GZ/qpKAqGgEEH7rhYlM4pTOSs/WyHtPubN2UePKTnTSww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ANIME JS ( https://animejs.com/ )-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" referrerpolicy="no-referrer"></script>
+
+    <script>
+        // function(){
+        //     $('#about').hide
+        // }
+
+
+        $(document).ready(function() {
+          $(".name, .student, .small-intro").lettering();
+        
+        // IMAGES OVERLAY EFFECT
+        anime({
+            targets: '.home .person-overlay',
+            translateX: 1100,
+            delay: 1000,
+            duration: 1500,
+            easing: 'easeInSine'
+        })
+        
+        anime({
+            targets: '.home .person img',
+            opacity:1,
+            delay: 1500,
+            duration: 1500,
+            easing: 'easeInSine'
+        })
+
+        // STUDENT
+        anime({
+            targets: '.student span',
+            opacity:1,
+            delay: anime.stagger(100, {start:3000}),
+            duration: 1500,
+            easing: 'easeInSine'
+        })
+
+        // NAME - FADE IN
+        anime({
+            targets: '.name span',
+            opacity:1,
+            delay: anime.stagger(100, {start:4500}),
+            duration: 3000,
+            easing: 'easeInSine'
+        })
+
+        // NAME - 2ND ANIMATION UP AND DOWN LETTERS
+        anime({
+            targets: '.name .char2, .name .char4, .name .char6',
+            keyframes: [
+                {translateY: 100, duration:1500}
+            ],
+            delay: 8000,
+            easing: 'easeInOutExpo',
+        })
+
+        anime({
+            targets: '.name .char3, .name .char5',
+            keyframes: [
+                {translateY: -100, duration:1500}
+            ],
+            delay: 8000,
+            easing: 'easeInOutExpo',
+        })
+
+        // LOGO
+
+        anime({
+            targets: '.logo',
+            opacity:1,
+            duration: 3000,
+            delay: 9500
+        })
+
+        // menu
+        anime({
+            targets: '.menu li',
+            opacity: 1,
+            duration: 3000,
+            delay: anime.stagger(150, {start: 10500})
+        })
+
+        // INTRO
+        anime({
+            targets: '.small-intro span',
+            opacity: 1,
+            duration: 1000,
+            easing:'easeInSine',
+            delay: anime.stagger(50, {start: 1100})
+        })
+
+        });
+    </script>
+</body>
+</html>

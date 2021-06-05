@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrinkto-fit=no">
+    <title>Hello, world!</title>
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- FONT AWSOME -->
+    <script src="https://kit.fontawesome.com/2004329f9f.js"
+            crossorigin="anonymous"></script>
+<body>
+
+<!-- Glassmorphism  -->
+<section>
+
+    <!-- background box -->
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+
+    <!-- LOGIN FORM -->
+    <div class="box">
+            <!-- square -->
+    <div class="square" style="--i:0;"></div>
+    <div class="square" style="--i:1;"></div>
+    <div class="square" style="--i:2;"></div>
+    <div class="square" style="--i:3;"></div>
+    <div class="square" style="--i:4;"></div>
+        <div class="container">
+            <div class="form">
+                <h2>Login Form</h2>
+                <!-- 로그인 폼 -->
+                <form action="">
+                    <!-- 아이디 -->
+                    <div class="inputBox">
+                        <input type="text" placeholder="userId">
+                    </div>
+                    <!-- 비밀번호 -->
+                    <div class="inputBox">
+                        <input type="password" placeholder="password">
+                    </div>
+                    <!-- 로그인 버튼-->
+                    <div class="inputBox">
+                        <input type="submit" value="Login">
+                    </div>
+                    <!-- 비밀번호 찾기, 회원가입 하기-->
+                    <p class="forget">Forgot password? <a href="#"> Click Here </a></p>
+                    <p class="forget">Don't have an account? <a href="#"> Sign up </a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+    <!-- JQeury CDN -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+</body>
+</html>

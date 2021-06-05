@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+}
+/*
+    align-items: center;
+    justify-content: center;
+*/
+
+.main{
+    background: #f6f6f6;
+}
+.sidebar {
+    position: absolute;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    padding-top: 30px;
+}
+
+/* 사이드바 타이틀 */
+.sidebar_inner h1{
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    line-height: 70px;
+    background: #fff;
+    user-select: none;
+    padding-left: 40px;
+}
+
+/* 사이드바 메뉴 */
+.sidebar ul li {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    color: #333;
+    font-size: 16px;
+
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+.sidebar ul li:hover a {
+    padding-left: 50px;
+    background: #ffcc77;
+    text-decoration: none;
+} 
+.sidebar ul li.active a {
+    padding-left: 50px;
+    background: #ffcc77;
+    text-decoration: none;
+} 
+.sidebar ul li a i {
+    margin-right: 16px;
+}
+
+
+
+
+
+/* Dashboard */
+.dashboard {
+    position: relative;
+    display: grid;
+    left: 350px;
+}
+.dashboard-sec{
+    margin: 30px;
+}
+.dashboard_title h1,
+.dashboard_title h4 {
+    color: #212529;
+}
+
+
+/* 대시보드 내용 */
+.dashboard_content {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.dashboard_content div{
+    margin: 15px;
+}
+
+
+
+/* 공지사항 */
+.notice{
+    width: 600px;
+    height: 400px;
+    background: #fff7e1;
+    border-radius: 30px;
+    overflow: hidden;  
+}
+.notice_content {
+    display: flex;
+    justify-content: space-between;
+}
+.notice_content img{
+    width: 300px;
+    bottom: 0;
+    transform: translate(-25px, 85px);
+}
+
+
+
+
+/* 판매 현황 */ 
+.report {
+    display: grid;
+    width: 600px;
+    height: 400px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.report div {
+    width: 270px;
+    height: 170px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.report div p,
+.report div h4 {
+    transform: translateY(40px);
+}
+.report1 {
+    background: #fff1b9;
+}
+.report2 {
+    background: #ffd26f;
+}
+/* 
+#f8ecc9
+#fff1b9
+#ffd26f 
+#fbd14b
+#f9d423
+*/
+.report3 {
+    background: #fbd14b;
+}
+.report4 {
+    background: #f9d423;
+}
+
+
+/* 차트 */
+
+.order_chart {
+    width: 600px;
+    height: 800px;
+    background: #fff;
+    border-radius: 30px;
+    overflow: hidden;  
+}
+
+.sales_chart {
+    width: 600px;
+    height: 800px;
+    background: #fff;
+    border-radius: 30px;
+    overflow: hidden;  
+}
+
+.content {
+    align-items: center;
+    justify-content: center;
+    transform: translate(10px, 10px);
+}
+
+.chart-sec {
+    width: 520px;
+    height: 600px;
+    background: #fff;
+}
+.chart-sec img {
+    width: 100%;
+    
+}

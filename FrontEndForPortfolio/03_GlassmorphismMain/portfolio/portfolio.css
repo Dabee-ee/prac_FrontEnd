@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+body
+{
+    background: #111;
+    padding-bottom: 300px;
+    overflow-x: hidden;
+}
+body::before
+{
+    content: 'Parallax';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16em;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px #555;
+
+}
+section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+}
+section h2
+{
+    margin-left: 200px;
+    font-size : 4em;
+    color: #fff;
+    margin-bottom:20px;
+}
+section .container
+{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section:nth-child(even) .container
+{
+    flex-direction: row-reverse;
+}
+section .container .imgBx
+{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0 25px 35px rgba(0,0,0,0.1); 
+}
+
+section .container .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .container .content
+{
+    position: absolute;
+    right: 0;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    padding: 40px;
+    background: #333;
+    z-index: 1;
+    max-width: 400px;
+    color: #fff;
+    box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+    border-bottom: 6px solid #4ac7ff;
+}
+section:nth-child(even) .container .content
+{
+    left: 0;
+}
+
+
+/* header */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    z-index: 10000;
+    transition: 0.6s;
+    background: transparent;
+    position: fixed;
+}
+header .logo
+{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s; 
+}
+header #toggle
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+header #toggle:before
+{
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -40px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+header #toggle:after
+{
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    left: -40px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+header.active #toggle:before
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #fff;
+}
+header.active #toggle:after
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background: #fff;
+}
+
+/* menu bar*/
+#navigation
+{
+    position: fixed;
+    top: 0;
+    left: -500px;
+    width: 400px;
+    height: 100vh;
+    background: #111;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    transition: 0.8s;
+    
+}
+#navigation.active 
+{
+    left: 0;
+}
+#navigation ul
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#navigation ul li
+{
+    list-style: none;
+}
+#navigation ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#navigation ul li:hover a
+{
+    color: greenyellow;
+    transition: 0.8s; 
+}
+
+
+section .active
+{
+    transform: translate(400px, 30px);
+}

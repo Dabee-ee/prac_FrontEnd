@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrinkto-fit=no">
+    <title>Hello, world!</title>
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- FONT AWSOME -->
+    <script src="https://kit.fontawesome.com/2004329f9f.js"
+            crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script defer src="main.js"></script>
+<body>
+
+<!-- template 출처 : https://www.youtube.com/watch?v=hf3Ncq3UX6c -->
+
+<!-- Page Lander Start -->
+<div class="page-loader">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<!-- Page Lander End -->
+
+<!-- Background Circles Start -->
+<div class="bg-circles">
+    <div class="cicle-1"></div>
+    <div class="cicle-2"></div>
+    <div class="cicle-3"></div>
+    <div class="cicle-4"></div>
+</div>
+<!-- Background Circles End -->
+
+<!-- Overlay Strat -->
+<div class="overlay"></div>
+<!-- Overlay End -->
+
+<!-- main start -->
+<div class="main">
+
+
+
+    <!-- Header Start -->
+    <div class="header">
+        <div class="container">
+            <div class="row flex-end">
+
+                <!-- 토글바 -->
+                <button type="button" class="nav-toggler">
+                    <span></span>
+                </button>
+                <!-- //토글바 -->
+
+                <!-- 메뉴 -->
+                <nav class="nav">
+                    <div class="nav-inner">
+                    <ul>
+                        <li><a href="#home" class="nav-item link-item">HOME</a></li>
+                        <li><a href="#about" class="nav-item link-item">ABOUT</a></li>
+                        <li><a href="#portfolio" class="nav-item link-item">PORTFOLIO</a></li>
+                        <li><a href="#contact" class="nav-item link-item">CONTACT</a></li>
+                    </ul>
+                </div>
+                <!-- //메뉴 -->
+
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- Header End -->
+
+
+    <!-- Home Section Start -->
+    <section class="home-section align-items-center" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="home-text">
+                    <p>Hello, I'm</p>
+                    <h1>DABEE</h1>
+                    <h2>Web Developer</h2>
+                    <a href="#about" class="btn link-item">more about me</a>
+                    <a href="#portfolio" class="btn link-item">portfolio</a>
+                </div>
+
+                <div class="home-img">
+                    <div class="img-box">
+                        <img src="images/profile.jpg" alt="profile">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Home Section End-->
+
+    <!-- About Section Start -->
+    <section class="about-section sec-padding" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2> about me </h2>
+                </div>
+
+                <div class="row">
+                    <div class="about-img">
+                        <div class="img-box">
+                            <img src="images/profile.jpg" alt="profile">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>안녕하세요, 문제를 개선하고 효율을 만드는 개발자</p>
+                        <h3>Skills</h3>
+                        <div class="skills">
+                            <div class="skill-item">html</div>
+                            <div class="skill-item">css</div>
+                            <div class="skill-item">javascript</div>
+                            <div class="skill-item">java</div>
+                            <div class="skill-item">spring</div>
+                            <div class="skill-item">python</div>
+                        </div>
+
+                        <div class="about-tabs">
+                            <button type="button" class="tab-item active" data-target="#education">education</button>
+                            <button type="button" class="tab-item" data-target="#experience">experience</button>
+                        </div>
+
+    <!-- Education Section Start -->
+    <div class="tab-content" id="education">
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="date">2021-06-01</span>
+                <h4>bachelor of technology - <span> todfod university </span></h4>
+                <p>국민연금공단 가입지원부 </p>
+            </div>
+
+            <div class="timeline-item">
+                <span class="date">2021-06-01</span>
+                <h4>bachelor of technology - <span> todfod university </span></h4>
+                <p>국민연금공단 가입지원부 </p>
+            </div>
+
+            <div class="timeline-item">
+                <span class="date">2021-06-01</span>
+                <h4>bachelor of technology - <span> todfod university </span></h4>
+                <p>국민연금공단 가입지원부 </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education End -->
+
+    <!-- Experience Start -->
+    <div class="tab-content active" id="experience">
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="date">2013-2016</div>
+                <h4> KH 정보교육원 <span> 빅데이터UI시각화 과정 </span></h4>
+                <p> 스프링 </p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="date">2013-2016</div>
+                <h4> KH 정보교육원 <span> 빅데이터UI시각화 과정 </span></h4>
+                <p> 자바 </p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="date">2013-2016</div>
+                <h4> KH 정보교육원 <span> 빅데이터UI시각화 과정 </span></h4>
+                <p> 파이썬 </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience End -->
+    <a href="cv.pdf" target="_blank" class="btn">download cv</a>
+    <a href="#contact" class="btn link-item">contact me</a>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <!-- About Section End -->
+
+    <!-- Profile Section Start -->
+    <section class="portfolio-section sec-padding" id="portfolio">
+        <div class="container">
+
+            <!-- title -->
+            <div class="row">
+                <div class="section-title">
+                    <h2>Recent Work</h2>
+                </div>
+            </div>
+
+            <!-- content -->
+            <div class="row">
+                <!-- portfolio item start -->
+                <div class="portfolio-item">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="/images/3.jpg" alt="portfolio item thumb">
+                    </div>
+                    <h3 class="portfolio-item-title">education course website</h3>
+                    <button type="button" class="btn view-project-btn">view project</button>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                        <p>포트폴리오 설명이 들어갈 자리입니다. 포트폴리오 설명이 들어갈 자리입니다.
+                            포트폴리오 설명이 들어갈 자리입니다. 포트폴리오 설명이 들어갈 자리입니다.
+                            포트폴리오 설명이 들어갈 자리입니다. 포트폴리오 설명이 들어갈 자리입니다.
+                        </p>
+                    </div>
+                    <div class="general-info">
+                        <ul>
+                            <li>Created - <span> 2021-04 </span></li>
+                            <li>technologies used - <span> HTML, CSS, JAVA </span></li>
+                            <li>Role - <span> FrontEnd, BackEnd, DataBase </span></li>
+                            <li>ViewOnline - <span><a href="">www.domain.com </a> </span></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- portfolio item end -->
+
+                                <!-- portfolio item start -->
+                                <div class="portfolio-item">
+                                    <div class="portfolio-item-thumbnail">
+                                        <img src="/images/1.jpg" alt="portfolio item thumb">
+                                    </div>
+                                    <h3 class="portfolio-item-title">education course website</h3>
+                                    <button type="button" class="btn view-project-btn">view project</button>
+                                    <div class="portfolio-item-details">
+                                        <div class="description">
+                                        <p>포트폴리오 설명이 들어갈 자리입니다. 포트폴리오 설명이 들어갈 자리입니다.
+                                            포트폴리오 설명이 들어갈 자리입니다. 포트폴리오 설명이 들어갈 자리입니다.
+                                            포트폴리오 설명이 들어갈 자리입니다. 포트폴리오 설명이 들어갈 자리입니다.
+                                        </p>
+                                    </div>
+                                    <div class="general-info">
+                                        <ul>
+                                            <li>Created - <span> 2021-04 </span></li>
+                                            <li>technologies used - <span> HTML, CSS, JAVA </span></li>
+                                            <li>Role - <span> FrontEnd, BackEnd, DataBase </span></li>
+                                            <li>ViewOnline - <span><a href="">www.domain.com </a> </span></li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- portfolio item end -->
+
+                                                <!-- portfolio item start -->
+                <div class="portfolio-item">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="/images/3.jpg" alt="portfolio item thumb">
+                    </div>
+                    <h3 class="portfolio-item-title">education course website</h3>
+                    <button type="button" class="btn view-project-btn">view project</button>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                        <p>포트폴리오 설명이 들어갈 자리입니다. 포트폴리오 설명이 들어갈 자리입니다.
+                            포트폴리오 설명이 들어갈 자리입니다. 포트폴리오 설명이 들어갈 자리입니다.
+                            포트폴리오 설명이 들어갈 자리입니다. 포트폴리오 설명이 들어갈 자리입니다.
+                        </p>
+                    </div>
+                    <div class="general-info">
+                        <ul>
+                            <li>Created - <span> 2021-04 </span></li>
+                            <li>technologies used - <span> HTML, CSS, JAVA </span></li>
+                            <li>Role - <span> FrontEnd, BackEnd, DataBase </span></li>
+                            <li>ViewOnline - <span><a href="">www.domain.com </a> </span></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- portfolio item end -->
+
+                                <!-- portfolio item start -->
+                                <div class="portfolio-item">
+                                    <div class="portfolio-item-thumbnail">
+                                        <img src="/images/1.jpg" alt="portfolio item thumb">
+                                    </div>
+                                    <h3 class="portfolio-item-title">education course website</h3>
+                                    <button type="button" class="btn view-project-btn">view project</button>
+                                    <div class="portfolio-item-details">
+                                        <div class="description">
+                                        <p>포트폴리오 설명이 들어갈 자리입니다. 포트폴리오 설명이 들어갈 자리입니다.
+                                            포트폴리오 설명이 들어갈 자리입니다. 포트폴리오 설명이 들어갈 자리입니다.
+                                            포트폴리오 설명이 들어갈 자리입니다. 포트폴리오 설명이 들어갈 자리입니다.
+                                        </p>
+                                    </div>
+                                    <div class="general-info">
+                                        <ul>
+                                            <li>Created - <span> 2021-04 </span></li>
+                                            <li>technologies used - <span> HTML, CSS, JAVA </span></li>
+                                            <li>Role - <span> FrontEnd, BackEnd, DataBase </span></li>
+                                            <li>ViewOnline - <span><a href="">www.domain.com </a> </span></li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- portfolio item end -->
+
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Contact Section Start -->
+    <section class="contact-section sec-padding" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>contact me</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form action="">
+                        <div class="row">
+
+                        <!-- 이름 -->
+                        <div class="input-group">
+                            <input type="text" placeholder="Name" class="input-control" required>
+                        </div>
+
+                        <!-- 이메일 -->
+                        <div class="input-group">
+                            <input type="email" placeholder="Email" class="input-control" required>
+                        </div>
+
+                        <!-- 전화번호 -->
+                        <div class="input-group">
+                            <input type="tel" placeholder="phone" class="input-control" required>
+                        </div>
+
+                        <!-- 메세지 -->
+                        <div class="input-group">
+                            <textarea placeholder="Message" class="input-control" required></textarea>
+                        </div>
+
+                        <div class="submit-btn">
+                            <button type="submit" class="btn"> send </button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+
+                <!-- 나의 개인 정보 -->
+                <div class="contact-info">
+                    <!-- 이메일 -->
+                    <div class="contact-info-item">
+                        <h3>Email</h3>
+                        <p>pieta2529@gmail.com</p>
+                    </div>
+
+                    <!-- 전화번호 -->
+                    <div class="contact-info-item">
+                        <h3>Phone</h3>
+                        <p>010-2529-2448</p>
+                    </div>
+
+                    <!-- 소셜 -->
+                    <div class="contact-info-item">
+                        <h3>Social</h3>
+                        <ul class="social-links">
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a> <!-- 깃헙 -->
+                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a> <!-- 블로그 -->
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a> <!-- 노션 -->
+                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a> 
+                      </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section End -->
+
+
+
+
+</div>
+<!-- Main End -->
+
+<!-- Portfolio Item Details Popup Start -->
+<div class="portfolio-popup">
+    <div class="pp-inner">
+        <div class="pp-content">
+            <div class="pp-header">
+                <button type="button" class="btn pp-close"> <i class="fas fa-times"></i> </button>
+                <div class="pp-thumbnail">
+                    <img src="images/1.jpg" alt="">
+                </div>
+                <h3></h3>
+            </div>
+            <div class="pp-body">
+                <!-- <div class="description">
+                    <p>포트폴리오 설명이 들어갈 자리입니다. 포트폴리오 설명이 들어갈 자리입니다.
+                        포트폴리오 설명이 들어갈 자리입니다. 포트폴리오 설명이 들어갈 자리입니다.
+                        포트폴리오 설명이 들어갈 자리입니다. 포트폴리오 설명이 들어갈 자리입니다.
+                    </p>
+                </div>
+                <div class="general-info">
+                    <ul>
+                        <li>Created - <span> 2021-04 </span></li>
+                        <li>technologies used - <span> HTML, CSS, JAVA </span></li>
+                        <li>Role - <span> FrontEnd, BackEnd, DataBase </span></li>
+                        <li>ViewOnline - <span><a href="">www.domain.com </a> </span></li>
+                    </ul>
+                </div> -->
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
